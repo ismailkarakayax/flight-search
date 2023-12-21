@@ -1,6 +1,7 @@
 # Flight Search API - README
 
 ---
+## İsmail Karakaya
 
 
 ## Description
@@ -86,6 +87,35 @@ security.enable=false
 
 #### Documentation
 - Created API documentation using Swagger.
+- Swagger link: http://localhost:8080/swagger-ui/index.html#/ 
+
+## Airport Controller
+- **Create Airport:** `POST /api/airports`
+- **Get Airport:** `GET /api/airports/{airportId}`
+- **Get All Airports:** `GET /api/airports`
+- **Update Airport:** `PUT /api/airports/{airportId}`
+- **Delete Airport:** `DELETE /api/airports/{airportId}`
+
+## Authentication Controller
+- **User Registration:** `POST /api/auth/register`
+- **User Login:** `POST /api/auth/login`
+- **Refresh Access Token:** `POST /api/auth/refresh`
+
+## Flight Controller
+- **Create a New Flight:** `POST /api/flights`
+- **Get a Flight by ID:** `GET /api/flights/{flightId}`
+- **Get All Flights:** `GET /api/flights`
+- **Update a Flight by ID:** `PUT /api/flights/{flightId}`
+- **Delete a Flight by ID:** `DELETE /api/flights/{flightId}`
+- **Search for Suited Flights:** `POST /api/flights/searchSuitedFlights`
+- **Set Flights Externally:** `PUT /api/flights/setFlights`
+
+## Mock Controller
+- **Get External Flights:** `GET /api/mock/getExternalFlights`
+
+## User Controller
+- **Get User by ID:** `GET /api/user/{userId}`
+- **Update User by ID:** `PUT /api/user/{userId}`
 
 ## Project Structure
 ```plaintext
